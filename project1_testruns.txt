@@ -1,0 +1,100 @@
+
+TESTRUN #1
+
+uhx02:/home/t/tealhoff% gcc -o project1 project1.c secant.c myfunc.c -lm
+uhx02:/home/t/tealhoff% ./project1
+Enter the coefficients for a polynomial of the form:
+    a + bx + cx^2 + dx^3 + ex^4 + fx^5
+Enter a b c d e f: -73.26 -26.92 5.10 1 0 0
+The function is: -73.26 + -26.92x + 5.10x^2 + 1.00x^3 + 0.00x^4 + 0.00x^5
+Please enter a minimum number and a maximum number separated by a space:-20 20
+You entered -20.0 as the xmin and 20.0 as xmax
+Please enter an amount of steps you would like to take to get from -20.0 to 20.0:15
+ x-value  y-value    x-root
+ =======  =======   ========
+-20.000    -5494.860
+-17.333    -3282.084
+-14.667    -1736.330
+-12.000    -743.820
+-9.333    -190.777
+-6.667    36.577     <= the root located is: -7.400
+-4.000    52.020
+-1.333    -30.670     <= the root located is: -2.200
+ 1.333    -97.716
+ 4.000    -35.340
+ 6.667    270.236     <= the root located is: 4.500
+ 9.333    932.790
+12.000    2066.100
+14.667    3783.943
+17.333    6200.097
+20.000    9428.340
+Total sign changes located on table is: 3
+Do you wish to change the search range for the table? (y/n): n
+
+uhx02:/home/t/tealhoff%
+
+
+TESTRUN #2
+
+uhx02:/home/t/tealhoff% ./project1
+Enter the coefficients for a polynomial of the form:
+    a + bx + cx^2 + dx^3 + ex^4 + fx^5
+Enter a b c d e f: 8829 1102.95 -1058.4 -131.55 8.6 1
+The function is: 8829.00 + 1102.95x + -1058.40x^2 + -131.55x^3 + 8.60x^4 + 1.00x^5
+Please enter a minimum number and a maximum number separated by a space:-20 18
+You entered -20.0 as the xmin and 18.0 as xmax
+Please enter an amount of steps you would like to take to get from -20.0 to 18.0:17
+ x-value  y-value    x-root
+ =======  =======   ========
+-20.000    -1208190.000
+-17.765    -520022.025
+-15.529    -173886.502
+-13.294    -30429.221
+-11.059    8333.112     <= the root located is: -12.000
+-8.824    5709.479
+-6.588    -2968.843     <= the root located is: -7.500
+-4.353    -3651.682
+-2.118    3126.639     <= the root located is: -3.000
+ 0.118    8943.897
+ 2.353    4186.583
+ 4.588    -15253.501     <= the root located is: 3.000
+ 6.824    -41282.634
+ 9.059    -46908.575
+11.294    20456.043     <= the root located is: 10.900
+13.529    245690.318
+15.765    752661.681
+18.000    1710922.500
+Total sign changes located on table is: 5
+Do you wish to change the search range for the table? (y/n): n
+
+uhx02:/home/t/tealhoff%
+
+
+TESTRUN #3
+
+uhx02:/home/t/tealhoff% ./project1
+Enter the coefficients for a polynomial of the form:
+    a + bx + cx^2 + dx^3 + ex^4 + fx^5
+Enter a b c d e f: 3 0 1 0 0 0
+The function is: 3.00 + 0.00x + 1.00x^2 + 0.00x^3 + 0.00x^4 + 0.00x^5
+Please enter a minimum number and a maximum number separated by a space:1 10
+You entered 1.0 as the xmin and 10.0 as xmax
+Please enter an amount of steps you would like to take to get from 1.0 to 10.0:10
+ x-value  y-value    x-root
+ =======  =======   ========
+ 1.000     4.000
+ 1.900     6.610
+ 2.800    10.840
+ 3.700    16.690
+ 4.600    24.160
+ 5.500    33.250
+ 6.400    43.960
+ 7.300    56.290
+ 8.200    70.240
+ 9.100    85.810
+Total sign changes located on table is: 0
+Do you wish to change the search range for the table? (y/n): n
+
+uhx02:/home/t/tealhoff%
+
+
